@@ -5,9 +5,69 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Timer / Stopwatch</title>
 </head>
 <body>
+<!--<div class="wrapper">-->
+<!--    <div class="container">-->
+<!--        <div class="clock">-->
+<!--            <div class="hand" id="second-hand"></div>-->
+<!--        <p class="time" id="time">00:00:00</p>-->
+<!--        </div>-->
+<!--            <button id="startStop">Start</button>-->
+<!--            <button id="reset">Reset</button>-->
 
+<!--    </div>-->
+<!--</div>-->
+
+<div class="wrapper">
+    <div class="container">
+        <div class="buttons-holder">
+            <button class="button" id="stopwatch"><img src="./images/stopwatch.png" alt="stopwatch icon" class="icon">Stopwatch</button>
+            <button class="button" id="timer"><img src="./images/timer.png" alt="timer icon" class="icon">Timer</button>
+        </div>
+        <div class="stopwatch" id="stopwatch-holder">
+            <div class="stopwatch-clock">
+                <div class="stopwatch-arrow"></div>
+            </div>
+        <p class="stopwatch-time" id="stopwatch-time">00:00:00</p>
+            <div class="stopwatch-btn-holder">
+                <button class="stopwatch-btn">Start</button>
+                <button class="stopwatch-btn">Reset</button>
+            </div>
+        </div>
+        <div class="timer hidden" id="timer-holder">
+            <input type="number" placeholder='Minutes (max. 60 min)' class="timer-input">
+            <div class="timer-clock">
+                <div class="timer-arrow"></div>
+            </div>
+            <p class="timer-time">00:00</p>
+            <div class="timer-btn-holder">
+                <button class="timer-btn">Start</button>
+                <button class="timer-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<script src="./script/index.js"></script>-->
+<!--<script>-->
+<!--    let stopwatchDiv = document.querySelector('#stopwatch-holder');-->
+<!--    let timerDiv = document.querySelector('#timer-holder')-->
+<!--    let timerBtn = document.querySelector('#timer');-->
+<!--    let stopwatchBtn = document.querySelector('#stopwatch')-->
+
+<!--    timerBtn.addEventListener('click', () => {-->
+<!--        stopwatchDiv.classList.add('hidden');-->
+<!--        timerDiv.classList.remove('hidden');-->
+
+<!--    });-->
+
+<!--    stopwatchBtn.addEventListener('click', () => {-->
+<!--        timerDiv.classList.add('hidden');-->
+<!--        stopwatchDiv.classList.remove('hidden');-->
+<!--    })-->
+<!--</script>-->
 </body>
 </html>
