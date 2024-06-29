@@ -9,18 +9,6 @@
     <title>Timer / Stopwatch</title>
 </head>
 <body>
-<!--<div class="wrapper">-->
-<!--    <div class="container">-->
-<!--        <div class="clock">-->
-<!--            <div class="hand" id="second-hand"></div>-->
-<!--        <p class="time" id="time">00:00:00</p>-->
-<!--        </div>-->
-<!--            <button id="startStop">Start</button>-->
-<!--            <button id="reset">Reset</button>-->
-
-<!--    </div>-->
-<!--</div>-->
-
 <div class="wrapper">
     <div class="container">
         <div class="buttons-holder">
@@ -29,45 +17,29 @@
         </div>
         <div class="stopwatch" id="stopwatch-holder">
             <div class="stopwatch-clock">
-                <div class="stopwatch-arrow"></div>
+                <div class="stopwatch-arrow" id="stopwatch-arrow"></div>
             </div>
         <p class="stopwatch-time" id="stopwatch-time">00:00:00</p>
             <div class="stopwatch-btn-holder">
-                <button class="stopwatch-btn">Start</button>
-                <button class="stopwatch-btn">Reset</button>
+                <button class="stopwatch-btn" id="stopwatch-start-stop-btn">Start</button>
+                <button class="stopwatch-btn" id="stopwatch-reset-btn">Reset</button>
             </div>
         </div>
         <div class="timer hidden" id="timer-holder">
-            <input type="number" placeholder='Minutes (max. 60 min)' class="timer-input">
+            <input type="number" placeholder='Minutes' class="timer-input" min="1" id="timer-input">
             <div class="timer-clock">
-                <div class="timer-arrow"></div>
+                <div class="timer-arrow" id="timer-arrow"></div>
             </div>
-            <p class="timer-time">00:00</p>
+            <p class="timer-time" id="timer-time">00:00:00</p>
             <div class="timer-btn-holder">
-                <button class="timer-btn">Start</button>
-                <button class="timer-btn">Reset</button>
+                <button class="timer-btn" id="timer-start-stop-btn">Start</button>
+                <button class="timer-btn" id="timer-reset-btn">Reset</button>
             </div>
         </div>
     </div>
 </div>
-
-<!--<script src="./script/index.js"></script>-->
-<!--<script>-->
-<!--    let stopwatchDiv = document.querySelector('#stopwatch-holder');-->
-<!--    let timerDiv = document.querySelector('#timer-holder')-->
-<!--    let timerBtn = document.querySelector('#timer');-->
-<!--    let stopwatchBtn = document.querySelector('#stopwatch')-->
-
-<!--    timerBtn.addEventListener('click', () => {-->
-<!--        stopwatchDiv.classList.add('hidden');-->
-<!--        timerDiv.classList.remove('hidden');-->
-
-<!--    });-->
-
-<!--    stopwatchBtn.addEventListener('click', () => {-->
-<!--        timerDiv.classList.add('hidden');-->
-<!--        stopwatchDiv.classList.remove('hidden');-->
-<!--    })-->
-<!--</script>-->
+<script src="./script/stopwatchMVC.js"></script>
+<script src="./script/timerMVC.js"></script>
+<script src="./script/app.js"></script>
 </body>
 </html>
