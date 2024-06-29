@@ -97,14 +97,4 @@ class stopwatchController {
     }
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const model = new stopwatchModel();
-//     const view = new stopwatchView();
-//     const controller = new stopwatchController(model, view);
-// })
-    const stopwatchModelApp = new stopwatchModel();
-    const stopwatchViewApp = new stopwatchView();
-    const stopwatchControllerApp = new stopwatchController(stopwatchModelApp, stopwatchViewApp);
-//
-//     export default controller;
 

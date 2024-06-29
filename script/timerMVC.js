@@ -125,9 +125,3 @@ class timerController {
         this.view.updateView(this.model.getTimerTime(), this.model.isTimerRunning());
     }
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const model = new timerModel();
-    const view = new timerView();
-    const controller = new timerController(model, view);
-})
